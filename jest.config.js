@@ -1,5 +1,8 @@
 
 const processStdoutWrite = process.stdout.write.bind(process.stdout)
+const nock = require('nock')
+
+nock.disableNetConnect()
 
 process.stdout.write = (str, encoding, cb) => {
     if (!str.match(/^::debug::/)) {
