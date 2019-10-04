@@ -2,5 +2,5 @@ name: 'debug-action'
 description: 'Outputs debug information'
 author: 'hppod'
 runs:
-  using: 'node11'
+  using: 'node12'
   main: './debug.js'
