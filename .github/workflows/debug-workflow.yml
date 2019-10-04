@@ -15,4 +15,4 @@ jobs:
         with:
           amazing-creature: Octocat
       id: debug
-      - run: echo There was an amazing message - ${{steps.debug.outputs.amazing-message}}
+      - run: echo There was an amazing message - ${{ steps.debug.outputs.amazing-message }}
